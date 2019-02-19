@@ -1,0 +1,22 @@
+
+1. инициализация
+
+sqlite3 main.db < init_db.sql
+
+2. Запуск
+
+Python 2.7
+
+# путь до файла БД можно задать переменной окружения DB_URI
+python manage.py
+
+127.0.0.1:80
+
+
+# Просмотр БД
+sqlite3
+attach "main.db" as db;
+select * from db.users;
+select * from db.auth;
+
+https://www.sqlite.org/download.html
